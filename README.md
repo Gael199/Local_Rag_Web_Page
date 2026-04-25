@@ -1,68 +1,42 @@
-\# Chat with Webpage RAG 🌐
+# Chat avec une page web — RAG local 🌐
 
+Ce projet est une application **RAG** (*Retrieval-Augmented Generation*) locale qui permet de discuter avec le contenu d’une page web.
 
+L’utilisateur entre l’URL d’une page web, l’application récupère son contenu, le découpe en morceaux, crée des embeddings, stocke ces informations dans une base vectorielle locale, puis permet de poser des questions sur cette page.
 
-A local Retrieval-Augmented Generation application built with \*\*Streamlit\*\*, \*\*LangChain\*\*, \*\*ChromaDB\*\*, and \*\*Ollama\*\*.
+L’application utilise **Streamlit**, **LangChain**, **ChromaDB** et **Ollama** avec des modèles locaux.
 
+---
 
+## Fonctionnalités
 
-The app allows users to enter a webpage URL, extract its content, split it into chunks, store it in a vector database, and ask questions about the page using a local LLM.
+- Charger le contenu d’une page web à partir d’une URL
+- Découper automatiquement le texte en petits morceaux
+- Créer des embeddings localement avec Ollama
+- Stocker les documents dans une base vectorielle ChromaDB
+- Retrouver les passages les plus pertinents selon la question
+- Générer une réponse avec un modèle local
+- Fonctionner en local via une interface Streamlit
 
+---
 
+## Technologies utilisées
 
-\## Features
+- Python
+- Streamlit
+- LangChain
+- ChromaDB
+- Ollama
+- TinyLlama
+- nomic-embed-text
 
+---
 
-
-\- Load and analyze a webpage from a URL
-
-\- Split webpage content into smaller chunks
-
-\- Create local embeddings with Ollama
-
-\- Store documents in ChromaDB
-
-\- Retrieve relevant context for each question
-
-\- Generate answers using a local language model
-
-\- Runs locally with Streamlit
-
-
-
-\## Tech Stack
-
-
-
-\- Python
-
-\- Streamlit
-
-\- LangChain
-
-\- ChromaDB
-
-\- Ollama
-
-\- TinyLlama
-
-\- nomic-embed-text
-
-
-
-\## Project Structure
-
-
+## Structure du projet
 
 ```text
-
 .
-
 ├── local_rag_eudes.py
-
 ├── requirements.txt
-
 ├── README.md
-
 └── .gitignore
-
