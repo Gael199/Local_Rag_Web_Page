@@ -58,7 +58,7 @@ The app allows users to enter a webpage URL, extract its content, split it into 
 
 .
 
-├── app.py
+├── local_rag_eudes.py
 
 ├── requirements.txt
 
