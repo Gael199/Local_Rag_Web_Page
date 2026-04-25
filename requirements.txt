@@ -1,0 +1,7 @@
+streamlit
+ollama
+beautifulsoup4
+chromadb
+langchain
+langchain-community
+langchain-text-splitters
